@@ -1,0 +1,121 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: 'Cinzel', serif;
+}
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* Logo */
+.navbar-logo img {
+    height: 50px;
+}
+
+/* Navbar links */
+.navbar-links {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+}
+
+/* Link styling */
+.navbar-links a {
+    color: #C2A83E;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: #ffffff;
+}
+
+/* Add the "One Ring" style hover underline */
+.navbar-links a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #C2A83E;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-links a:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+/* Hamburger menu */
+.menu-icon {
+    display: none; /* Hidden by default */
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: rgba(194, 168, 62, 0);
+    transition: all 0.3s ease;
+}
+
+/* Animation for open state */
+.bar.open:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.bar.open:nth-child(2) {
+    opacity: 0;
+}
+
+.bar.open:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .navbar-links {
+        display: none; /* Hide links by default */
+        flex-direction: column;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .navbar-links.active {
+        display: flex; /* Show links when active */
+    }
+
+    .menu-icon {
+        display: flex; /* Show hamburger icon */
+    }
+}
+
+/* Smaller devices like phones */
+@media (max-width: 480px) {
+    .navbar-links a {
+        padding: 12px 0;
+        border-bottom: 1px solid #C2A83E;
+
+    } }

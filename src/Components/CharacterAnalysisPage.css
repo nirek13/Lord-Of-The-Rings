@@ -1,0 +1,163 @@
+/* Global Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light grey text */
+    line-height: 1.6;
+}
+
+/* Container */
+.character-analysis-page {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #1c1c1c; /* Dark background for the page */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8); /* Deep shadow for modern look */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    align-items: center;
+}
+
+/* Shiny Metallic Gold Gradient */
+@keyframes shimmer {
+    0% {
+        background-position: -500px;
+    }
+    100% {
+        background-position: 500px;
+    }
+}
+
+.shiny-gold {
+    background: linear-gradient(90deg, #FFB800, #FFD700, #FFB800);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite linear;
+    color: #1c1c1c; /* Dark background for text contrast */
+}
+
+/* Title */
+h1 {
+    font-size: 3.5rem;
+    color: #FFB800; /* Shiny metallic gold */
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+    text-transform: uppercase; /* Modern touch */
+    font-weight: 700;
+    text-shadow: 0 4px 6px rgba(255, 184, 0, 0.8); /* Glowing gold effect */
+}
+
+/* Frodo Image Styling */
+.frodo-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 40px rgba(255, 184, 0, 0.7); /* Glowing effect around the image */
+}
+
+.frodo-image {
+    max-width: 300px;
+    border-radius: 12px;
+    border: 6px solid #FFB800; /* Shiny metallic gold border */
+    box-shadow: 0 4px 25px rgba(255, 184, 0, 0.7); /* Glowing effect */
+    transition: transform 0.3s ease-in-out;
+}
+
+.frodo-image:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+/* Content Section */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Card-like Sections */
+section {
+    background-color: #212121; /* Slightly lighter background for sections */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    color: #FFB800;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    animation: shimmer 2s infinite linear; /* Shimmer effect for headings */
+}
+
+section p, .traits li {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.traits ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.traits li {
+    margin-bottom: 15px;
+}
+
+.traits li strong {
+    color: #FFB800; /* Shiny metallic gold for trait names */
+}
+
+/* Impact Section */
+.impact {
+    margin-bottom: 40px;
+}
+
+/* Hover Effects on Cards */
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .character-analysis-page {
+        grid-template-columns: 1fr; /* Stack layout for small screens */
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .frodo-image-container {
+        margin-bottom: 30px;
+    }
+
+    .frodo-image {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    .traits li {
+        font-size: 1rem;
+    }
+}
