@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     height: 100%; /* Full viewport height */
-    background: linear-gradient(to bottom, #000, #333);
+    background: linear-gradient(to bottom, #000, #000000);
     color: #f0e68c; /* Gold color for text */
     font-family: 'Cinzel', cursive; /* Use a suitable cursive font */
     text-align: center;
