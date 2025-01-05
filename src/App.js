@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LandingPage from './Components/LandingPage';
 import Navbar from './Components/Navbar';
 import CharacterAnalysisPage from './Components/CharacterAnalysisPage'; // Ensure correct capitalization
-
+import GalleryPage from './Components/Booksnap';
 const App = () => {
     // const [showIntro, setShowIntro] = useState(true); // Start by showing the intro
     // const [isIntroComplete, setIsIntroComplete] = useState(false); // Track if the intro is complete
@@ -31,6 +31,7 @@ const App = () => {
                     {/* Use the `element` prop to render components */}
                     <Route path="/" element={<LandingPage />} />
                     <Route path="/characters" element={<CharacterAnalysisPage />} />
+                    <Route path="/Booksnaps" element={<GalleryPage/>} />
                 </Routes>
             </Router>
             {/* )} */}
