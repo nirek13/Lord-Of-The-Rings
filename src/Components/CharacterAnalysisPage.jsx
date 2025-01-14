@@ -4,24 +4,24 @@ import './CharacterAnalysisPage.css';
 const CharacterAnalysisPage = () => {
     return (
         <div className="character-analysis-page">
-            {/* Sauron Image Container */}
-            <div className="sauron-image-container">
+            {/* Frodo Image Container */}
+            <div className="frodo-image-container">
                 <img
-                    src="https://via.placeholder.com/300x400?text=Sauron"
-                    alt="Sauron"
-                    className="sauron-image"
+                    src="https://via.placeholder.com/300x400?text=Frodo"
+                    alt="Frodo"
+                    className="frodo-image"
                 />
             </div>
 
             {/* Content Section */}
             <div className="content">
-                <h1 className="main-title">Sauron: The Dark Lord Unveiled</h1>
+                <h1 className="main-title">Frodo: The Ring Bearer</h1>
 
                 {/* Biography Section */}
                 <section className="biography">
                     <h2>Biography</h2>
                     <p>
-                        Once a Maia of Aulë, Sauron succumbed to the allure of power, becoming Morgoth's most formidable servant. After Morgoth's fall, Sauron forged his own path to dominion, crafting the One Ring as the ultimate tool to subjugate Middle-earth. With an unmatched blend of intelligence and malice, Sauron's legacy is one of fear and control.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
                     <button className="reveal-more-button" onClick={() => alert('More details coming soon!')}>
                         Learn More
@@ -33,19 +33,19 @@ const CharacterAnalysisPage = () => {
                     <h2>Personality Traits</h2>
                     <ul>
                         <li>
-                            <strong>Ambition:</strong> His vision extends beyond conquest, aiming for absolute control over life itself.
+                            <strong>Lorem:</strong> Ipsum dolor sit amet, consectetur adipiscing elit.
                         </li>
                         <li>
-                            <strong>Deceit:</strong> Master of lies, Sauron manipulates allies and enemies alike with false promises.
+                            <strong>Dolor:</strong> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </li>
                         <li>
-                            <strong>Cruelty:</strong> His tactics ensure submission, blending fear with unyielding brutality.
+                            <strong>Amet:</strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
                         </li>
                         <li>
-                            <strong>Persistence:</strong> No defeat is final; Sauron bides his time, waiting for the perfect moment to rise.
+                            <strong>Consectetur:</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse.
                         </li>
                         <li>
-                            <strong>Intelligence:</strong> An architect of chaos, his deep understanding of lore and strategy makes him unstoppable.
+                            <strong>Adipiscing:</strong> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.
                         </li>
                     </ul>
                 </section>
@@ -54,17 +54,17 @@ const CharacterAnalysisPage = () => {
                 <section className="impact">
                     <h2>Legacy and Impact</h2>
                     <p>
-                        The One Ring, Sauron's greatest creation, ensnared the free peoples of Middle-earth in an enduring cycle of war and despair. Even in defeat, his influence lingers, a testament to the destructive power of unchecked ambition. Sauron’s story is both a cautionary tale and a symbol of resilience in the face of tyranny.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
                     </p>
                     <blockquote className="quote">
-                        "One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them."
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                     </blockquote>
                 </section>
 
                 {/* Interactive Quiz Section */}
                 <section className="quiz">
-                    <h2>Quiz: How Well Do You Know Sauron?</h2>
-                    <p>Test your knowledge about Sauron's lore and his role in Middle-earth!</p>
+                    <h2>Quiz: How Well Do You Know Frodo?</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Test your knowledge about Frodo!</p>
                     <button className="start-quiz-button" onClick={() => alert('Quiz feature coming soon!')}>
                         Start Quiz
                     </button>
