@@ -4,6 +4,7 @@ import LandingPage from './Components/LandingPage';
 import Navbar from './Components/Navbar';
 import CharacterAnalysisPage from './Components/CharacterAnalysisPage'; // Ensure correct capitalization
 import GalleryPage from './Components/Booksnap';
+import Essays from "./Components/Essay";
 const App = () => {
     // const [showIntro, setShowIntro] = useState(true); // Start by showing the intro
     // const [isIntroComplete, setIsIntroComplete] = useState(false); // Track if the intro is complete
@@ -32,6 +33,7 @@ const App = () => {
                     <Route path="/" element={<LandingPage />} />
                     <Route path="/characters" element={<CharacterAnalysisPage />} />
                     <Route path="/Booksnaps" element={<GalleryPage/>} />
+                    <Route path="/Essay" element={<Essays/>} />
                 </Routes>
             </Router>
             {/* )} */}

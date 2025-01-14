@@ -1,13 +1,23 @@
 import React, { useState } from 'react';
 import './Gallery.css';
 
+// Importing images directly
+import img1 from '../1.png';
+import img2 from '../2.png';
+import img3 from '../3.png';
+import img4 from '../4.png';
+import img5 from '../5.png';
+
+import img7 from '../7.png';
+import img8 from '../8.png';
+import img9 from '../9.png';
+
+
 const Gallery = () => {
     const [selectedImage, setSelectedImage] = useState(null);
 
-    const images = Array.from(
-        { length: 10 },
-        (_, index) => `https://via.placeholder.com/600x${Math.floor(400 + Math.random() * 300)}?text=Image+${index + 1}`
-    );
+    // Manually defined paths for imported images
+    const images = [img1, img2, img3, img4, img5,  img7, img8, img9];
 
     const handleImageClick = (image) => {
         setSelectedImage(image);
@@ -19,7 +29,7 @@ const Gallery = () => {
 
     return (
         <div className="gallery">
-            <h1>Masonry Layout Gallery</h1>
+            <h1>Booksnaps</h1>
             <div className="masonry-layout">
                 {images.map((image, index) => (
                     <div key={index} className="masonry-item">
