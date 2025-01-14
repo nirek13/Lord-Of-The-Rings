@@ -1,0 +1,75 @@
+/* General Gallery Styling */
+.gallery {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000; /* Optional: Light background for contrast */
+}
+
+.masonry-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.masonry-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 8px; /* Adds space around the image inside the grid cell */
+}
+
+.masonry-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures image fills the container without distortion */
+    cursor: pointer;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block; /* Ensures no spacing below the image */
+    margin-top: 10px; /* Adds extra space at the top */
+    margin-bottom: 10px; /* Adds extra space at the bottom */
+}
+
+.masonry-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal Styling */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 90%; /* Increased to give more space */
+    max-height: 90%; /* Allows image to scale down */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto; /* Allows scrolling if the image is too large */
+}
+
+.modal-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Ensures the whole image is visible without cropping */
+    border-radius: 8px;
+    border: 5px solid white;
+    margin-top: 20px; /* Adds extra space at the top */
+    margin-bottom: 20px; /* Adds extra space at the bottom */
+}
+
+.modal:hover {
+    cursor: pointer;
+}

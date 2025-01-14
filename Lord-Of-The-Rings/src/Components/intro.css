@@ -1,0 +1,42 @@
+/* App.css */
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Full viewport height */
+    background: linear-gradient(to bottom, #000, #000000);
+    color: #f0e68c; /* Gold color for text */
+    font-family: 'Cinzel', cursive; /* Use a suitable cursive font */
+    text-align: center;
+    overflow: hidden; /* Prevent overflow during animation */
+    position: absolute;
+    width: 100%;
+
+}
+
+.verse-line {
+    margin: 0;
+    font-size: 2rem; /* Adjust size as needed */
+    opacity: 1; /* Start fully visible */
+    animation: powdery 1.5s forwards; /* Powdery animation */
+}
+
+.fade-out .verse-line {
+    animation: dissolve 2s forwards; /* Dissolve effect */
+}
+
+@keyframes powdery {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); opacity: 0.8; }
+}
+
+/* App.css */
+.fade-out {
+    animation: dissolve 2s forwards; /* Dissolve effect */
+}
+
+@keyframes dissolve {
+    0% { opacity: 1; transform: translateX(0); }
+    100% { opacity: 0;  filter: blur(4px); }
+}

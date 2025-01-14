@@ -1,0 +1,67 @@
+/* Global Styles */
+body {
+    font-family: 'Merriweather', serif; /* Readable and modern font */
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Neutral dark background */
+    color: #e0e0e0; /* Light gray text for contrast */
+    line-height: 1.8;
+}
+
+/* Container */
+.character-analysis-page {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 40px;
+
+    border: 2px solid #333; /* Dark gray border */
+    border-radius: 15px;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.8), 0 0 15px rgba(64, 64, 64, 0.3); /* Subtle shadow */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    align-items: center;
+}
+
+/* Title */
+h1 {
+    font-size: 4rem;
+    font-family: 'Cinzel Decorative', serif; /* Ornamental title font */
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffffff; /* White text for better contrast */
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.3), 0 0 30px rgba(255, 255, 255, 0.2); /* Soft glow */
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+/* Image Container */
+.sauron-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #333; /* Dark frame for the image */
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7), 0 0 20px rgba(64, 64, 64, 0.3); /* Subtle shadow */
+    overflow: hidden;
+}
+
+.sauron-image {
+    max-width: 100%;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.sauron-image:hover {
+    transform: scale(1.1); /* Zoom effect */
+    filter: brightness(1.1); /* Slight brighten on hover */
+}
+
+/* Content Section */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+

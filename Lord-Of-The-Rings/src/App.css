@@ -1,0 +1,11 @@
+
+.App {
+
+  background: linear-gradient(to bottom, #000, #333);
+
+}
+.uncial-antiqua-regular {
+  font-family: "Uncial Antiqua", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
